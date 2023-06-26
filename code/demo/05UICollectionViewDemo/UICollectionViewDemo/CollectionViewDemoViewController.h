@@ -1,0 +1,16 @@
+//
+//  CollectionViewDemoViewController.h
+//  05UICollectionViewDemo
+//
+//  Created by 蒙秋华 on 2023/6/25.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CollectionViewDemoViewController : UIViewController
+
+@end
+
+NS_ASSUME_NONNULL_END
