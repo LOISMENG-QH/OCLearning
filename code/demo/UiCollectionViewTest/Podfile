@@ -1,0 +1,10 @@
+# Uncomment this line to define a global platform for your project
+
+# 忽略引入库的所有警告（强迫症者的福音啊）
+inhibit_all_warnings!
+
+platform :ios, '8.0'
+
+target 'UiCollectionViewTest' do
+  pod 'Masonry', '~> 1.1.0'
+end

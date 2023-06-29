@@ -6,6 +6,7 @@
 //
 
 #import "CollectionViewDemoViewController.h"
+#import "PicCell.h"
 
 #define CELL_ID   @"CollectionViewCellId"
 #define HEADER_ID @"CollectionViewHeadId"
@@ -60,9 +61,11 @@
 //数据来源data source
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
 //    The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
+//    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
+    PicCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
     
-    cell.backgroundColor = RANDOM_COLOR;
+    [cell.imageView setImage: [UIImage imageNamed:@"headicon"]];
+//    cell.backgroundColor = RANDOM_COLOR;
     NSLog(@"%@",NSStringFromCGRect(cell.frame));
     return cell;
 }
