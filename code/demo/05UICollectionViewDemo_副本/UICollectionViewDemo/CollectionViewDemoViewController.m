@@ -39,7 +39,7 @@
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
 //    通过id注册 实现复用
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CELL_ID];
+    [self.collectionView registerClass:[PicCell class] forCellWithReuseIdentifier:CELL_ID];
     
 //    4.将collectionView加到父view
     [self.view addSubview:self.collectionView];
